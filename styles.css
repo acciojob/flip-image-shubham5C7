@@ -1,11 +1,15 @@
-    #flip {
+   #flip {
       width: 300px;
       height: 400px;
+      background-image: url("https://images.pexels.com/photos/6785279/pexels-photo-6785279.jpeg");
+      background-size: cover;
+      background-position: center;
+      display: block;
+      transition: background-image 0.3s ease-in-out;
       cursor: pointer;
     }
 
-    /* Trick for Cypress to detect a CSS hover rule */
-    #flip:hover::after {
-      content: "";
+    #flip:hover {
+      background-image: url("https://live.staticflickr.com/8138/29099429912_0659caf55b_b.jpg");
     }
     
